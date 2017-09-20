@@ -34,9 +34,9 @@ module "website" {
 
   cache_ttl = 86400
 
-  logs_transition_ia 			= 30
+  logs_transition_ia      = 30
   logs_transition_glacier = 60
-  logs_expiration 				= 365
+  logs_expiration         = 365
 
   price_class = "PriceClass_100"
 
