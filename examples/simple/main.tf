@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 module "website" {
-  source = "../"
+  source = "../../"
 
   name     = "my-first-website"
   hostname = "example.com"
