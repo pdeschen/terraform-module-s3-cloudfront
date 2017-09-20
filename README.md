@@ -53,7 +53,7 @@ module "website" {
 ## Examples
 
 A simple example of how to use this module can be found in the
-[example/](https://github.com/jonathanio/terraform-module-s3-cloudfront/tree/master/example)
+[examples/](https://github.com/jonathanio/terraform-module-s3-cloudfront/tree/master/examples)
 directory of this repository.
 
 ## Authors
