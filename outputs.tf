@@ -17,3 +17,8 @@ output "cloudfront_distribution_hostname" {
   description = "The hostname of the CloudFront Distribution (use for DNS CNAME)."
   value       = "${aws_cloudfront_distribution.website.domain_name}"
 }
+
+output "cloudfront_zone_id" {
+  description = "The Zone ID of the CloudFront Distribution (use for DNS Alias)."
+  value       = "${aws_cloudfront_distribution.website.hosted_zone_id}"
+}
