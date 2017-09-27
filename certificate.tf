@@ -10,5 +10,5 @@ provider "aws" {
 
 data "aws_acm_certificate" "frontend" {
   provider = "aws.us-east-1"
-  domain   = "${var.hostname}"
+  domain   = "${coalesce(var.wildcard_ssl, var.hostname)}"
 }

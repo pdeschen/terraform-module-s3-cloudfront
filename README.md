@@ -25,8 +25,10 @@ provider "aws" {
 module "website" {
   source = "modules/terraform-module-s3-cloudfront"
 
-  name     = "my-first-website"
-  hostname = "example.com"
+  name         = "my-first-website"
+  hostname     = "example.com"
+  wildcard_ssl = "*.example.com"
+  
   aliases  = [
   	"example.net",
   	"example.org"
@@ -59,6 +61,7 @@ directory of this repository.
 ## Authors
 
 Jonathan Wright <jon@than.io>
+Dave Dash <dd@davedash.com>
 
 ## License
 
