@@ -8,6 +8,11 @@ variable "hostname" {
   default     = "example.com"
 }
 
+variable "wildcard_ssl" {
+  description = "Wildcard SSL certificate domain name.  E.g. *.example.com"
+  default     = ""
+}
+
 variable "aliases" {
   description = "Additional aliases to host this website for."
   default     = []
